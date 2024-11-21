@@ -1,7 +1,7 @@
-# Ex No:2b  IMPLEMENTATION OF SLIDING WINDOW PROTOCOL
-## NAME : ARAVINDAN D
-## REGISTER NUMBER : 212223240012
-## AIM
+# Ex No:1b  IMPLEMENTATION OF SLIDING WINDOW PROTOCOL
+
+## AIM:
+  To Implement of sliding window protocal.
 ## ALGORITHM:
 1. Start the program.
 2. Get the frame size from the user
