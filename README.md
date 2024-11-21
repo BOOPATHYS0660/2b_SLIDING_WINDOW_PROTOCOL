@@ -12,24 +12,24 @@
 ## PROGRAM:
 ### CLIENT
 ```py
-import socket
-s=socket.socket()
-s.bind(('localhost',8000))
-s.listen(5)
-c, addr=s. accept()
-size=int(input ("Enter number of frames to send"))
-l=list(range(size))
-s=int(input("Enter Window Size : "))
-st=0
-i=0
-while True:
-  while(i<len(l)):
-   st+=s
-   c.send(str(l[i:st]).encode())
-   ack=c.recv(1024).decode()
-   if ack:
-    print(ack)
-    i+=s
+import socket 
+s=socket.socket() 
+s.bind(('localhost',8000)) 
+s.listen(5) 
+c,addr=s.accept() 
+size=int(input("Enter number of frames to send : ")) 
+l=list(range(size)) 
+s=int(input("Enter Window Size : ")) 
+st=0 
+i=0 
+while True: 
+    while(i<len(l)): 
+            st+=s 
+            c.send(str(l[i:st]).encode()) 
+            ack=c.recv(1024).decode() 
+            if ack: 
+                print(ack) 
+                i+=s 
 
 ```
 ### SERVER
@@ -45,11 +45,11 @@ while True:
 ## OUTPUT
 ### CLIENT OUTPUT:
 
-![Screenshot 2024-05-09 124200](https://github.com/Aravindan2006/2b_SLIDING_WINDOW_PROTOCOL/assets/151760062/7fec0bf4-decf-49cf-ad61-dd7a707b7a86)
+![Screenshot 2024-11-21 174404](https://github.com/user-attachments/assets/612494ab-8499-4ec6-acef-255cc939cb00)
 
 ### SERVER OUTPUT:
 
-![Screenshot 2024-05-09 124208](https://github.com/Aravindan2006/2b_SLIDING_WINDOW_PROTOCOL/assets/151760062/bed5fa72-6966-4d9f-9d0e-0d9000011dd9)
+![Screenshot 2024-11-21 174348](https://github.com/user-attachments/assets/4eb45939-876c-4cd4-a13d-01e7c85c06a9)
 
 ## RESULT
 Thus, python program to perform stop and wait protocol was successfully executed
